@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multicar Delivery</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --primary-dark: #0b0f12;
+      --gradient-header: linear-gradient(90deg, #0b0f12, #16202b);
+      --accent: #f39c12;
+      --text-light: #fff;
+      --bg-overlay: rgba(0, 0, 0, 0.5);
+      --service-text-size: 1rem;
+    }
+
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Body & Global Background */
+    body {
+      position: relative;
+      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-light);
+      line-height: 1.6;
+
+      /* фон камінців по всій сторінці */
+      background: url('images/hero.jpg') center/cover no-repeat fixed;
+    }
+    /* напівпрозорий шар поверх фону */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: var(--bg-overlay);
+      z-index: -1;
+    }
+
+    /* Header */
+    header.site-header {
+      position: sticky;
+      top: 0;
+      background: var(--gradient-header);
+      padding: 1.5rem 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      z-index: 10;
+      text-align: center;
+    }
+    .logo {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--text-light);
+      text-transform: capitalize;
+      letter-spacing: 2px;
+      transition: color 0.3s ease;
+    }
+    .logo:hover {
+      color: var(--accent);
+    }
+
+    /* Hero Section */
+    #hero {
+      position: relative;
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 0;
+    }
+    #hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--bg-overlay);
+      z-index: 0;
+    }
+    #hero .inner {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      width: 90%;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    /* Services & Contact Blocks */
+    .hero-services-block,
+    .hero-contact-block {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(6px);
+      border-radius: 12px;
+      padding: 1.75rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .hero-services-block:hover,
+    .hero-contact-block:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.6);
+    }
+
+    /* List styling */
+    .hero-services-block p,
+    .hero-services-block li {
+      font-size: var(--service-text-size);
+      margin-bottom: 1rem;
+      color: var(--text-light);
+      font-weight: 400;
+    }
+    .hero-services-block ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .hero-services-block li {
+      position: relative;
+      padding-left: 2rem;
+      margin-bottom: 0.75rem;
+    }
+    .hero-services-block li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.4rem;
+      width: 0.8rem;
+      height: 0.8rem;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+
+    /* Contact block */
+    .hero-contact-block h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--text-light);
+    }
+    .hero-contact-block p,
+    .hero-contact-block a {
+      font-size: var(--service-text-size);
+      margin-bottom: 0.75rem;
+      display: block;
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: 400;
+    }
+    .hero-contact-block a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer.site-footer {
+      background: transparent;
+      border-top: none;
+      text-align: center;
+      padding: 2rem 0;
+      color: var(--text-light);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header.site-header {
+        padding: 1rem 0;
+      }
+      .logo {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Multicar Delivery</h1>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="inner">
+      <div class="hero-services-block">
+        <p>Пропонуємо вам послуги міні-самоскида, а саме:</p>
+        <ul class="hero-services">
+          <li>Доставка будівельних матеріалів (піску, щебеню, землі, цементу, вапна тощо)</li>
+          <li>Вивезення будівельного та побутового сміття</li>
+        </ul>
+        <p>Великою перевагою наших послуг є компактні габарити вантажівки, що дозволяє нам доставляти вантаж туди де вам зручно.</p>
+      </div>
+
+      <div class="hero-contact-block">
+        <h3>Зв’язок із нами</h3>
+        <p>Телефон: <a href="tel:+380732151709">+38 (073) 215-17-09</a></p>
+        <p>Телеграм: <a href="https://t.me/multicar_delivery" target="_blank">@multicar_delivery</a></p>
+        <p>TikTok: <a href="https://www.tiktok.com/@multicar_delivery" target="_blank">@multicar_delivery</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2025 Multicar Delivery. Усі права захищені.</p>
+  </footer>
+</body>
+</html>
