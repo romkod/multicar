@@ -27,7 +27,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: var(--text-light);
   line-height: 1.6;
-  background: url('/multicar/images/hero.jpg') center/cover no-repeat fixed;
+  background: url('/images/hero.jpg') center/cover no-repeat fixed;
 }
 body::before {
   content: '';
@@ -40,7 +40,7 @@ body::before {
 /* 403 Page Specific Background */
 /* Для сторінки 403 додайте в <body> клас="error403" */
 body.error403 {
-  background: url('/multicar/images/403.jpg') center/cover no-repeat fixed;
+  background: url('/images/403.jpg') center/cover no-repeat fixed;
 }
 
 /* Header & Navigation */
