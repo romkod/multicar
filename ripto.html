@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multicar Delivery</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <!-- Загальні стилі -->
+  <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Multicar Delivery</h1>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="ripto.html">Доставка матеріалів</a></li>
+        <li><a href="hlam.html">Вивезення сміття</a></li>
+        <li><a href="contact.html">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="products">
+    <h2>Матеріали доступні до замовлення</h2>
+    <div class="products-grid">
+
+      <!-- Товар 1: Щебінь -->
+      <a href="403.html" class="product-link">
+        <div class="product-card">
+          <img src="images/product1.jpg" alt="Щебінь">
+          <ul class="product-features">
+            <li>Доступні фракції: 2–5мм, 5-20 мм, 20-40мм,<br>40-70мм, 70-100мм</li>
+            <li>Походження: Гранітний </li>
+            <li>Щільність: 1.35 т/м<sup>3</sup></li>
+          </ul>
+          <div class="product-info">
+            <h3>Щебінь</h3>
+            <p class="price">1050&nbsp;грн/м<sup>3</sup></p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Товар 2: Відсів -->
+      <a href="403.html" class="product-link">
+        <div class="product-card">
+          <img src="images/product2.jpg" alt="Відсів">
+          <ul class="product-features">
+            <li>Фракція: 0-5мм</li>
+            <li>Щільність ≈ 1.4 т/м<sup>3</sup></li>
+          </ul>
+          <div class="product-info">
+            <h3>Відсів</h3>
+            <p class="price">950&nbsp;грн/м<sup>3</sup></p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Товар 3: Пісок (кар’єрний) -->
+      <a href="403.html" class="product-link">
+        <div class="product-card">
+          <img src="images/product3.jpg" alt="Пісок кар’єрний">
+          <ul class="product-features">
+            <li>Гранулометрія: 0.16–2 мм</li>
+            <li>Вологість: до 5%</li>
+            <li>Щільність: 1.4 т/м<sup>3</sup></li>
+          </ul>
+          <div class="product-info">
+            <h3>Пісок (кар’єрний)</h3>
+            <p class="price">500&nbsp;грн/м<sup>3</sup></p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Товар 4: Пісок (митий) -->
+      <a href="403.html" class="product-link">
+        <div class="product-card">
+          <img src="images/product4.jpg" alt="Пісок митий">
+          <ul class="product-features">
+            <li>Очищений від глини, без каменів</li>
+            <li>Гранулометрія: 0.1–1.2 мм</li>
+            <li>Щільність: 1.4 т/м<sup>3</sup></li>
+          </ul>
+          <div class="product-info">
+            <h3>Пісок (митий)</h3>
+            <p class="price">550&nbsp;грн/м<sup>3</sup></p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Товар 5: Чорнозем -->
+      <a href="403.html" class="product-link">
+        <div class="product-card">
+          <img src="images/product5.jpg" alt="Чорнозем">
+          <ul class="product-features">
+            <li>Грунт родючий</li>
+   
+            <li>Щільність: 1.2 т/м<sup>3</sup></li>
+          </ul>
+          <div class="product-info">
+            <h3>Чорнозем</h3>
+            <p class="price">500&nbsp;грн/м<sup>3</sup></p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Товар 6: Вапно гашене -->
+      <a href="403.html" class="product-link">
+        <div class="product-card">
+          <img src="images/product6.jpg" alt="Вапно гашене">
+          <ul class="product-features">
+            <li>Чистота ≥ 90%</li>
+            <li>Упаковка: мішок 50кг</li>
+          </ul>
+          <div class="product-info">
+            <h3>Вапно гашене</h3>
+            <p class="price">3500&nbsp;грн/т</p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="inner">
+      <div class="hero-contact-block">
+        <h3>Зв’язок із нами</h3>
+        <p>Телефон: <a href="tel:+380732151709">+38 (073) 215-17-09</a></p>
+        <p>Телеграм: <a href="https://t.me/multicar_delivery" target="_blank">@multicar_delivery</a></p>
+        <p>TikTok: <a href="https://www.tiktok.com/@multicar_delivery" target="_blank">@multicar_delivery</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2025 Multicar Delivery. Усі права захищені.</p>
+  </footer>
+
+  <script>
+    // Тогл меню
+    document.querySelector('.site-header')
+      .addEventListener('click', function() {
+        this.classList.toggle('open');
+      });
+  </script>
+</body>
+</html>
